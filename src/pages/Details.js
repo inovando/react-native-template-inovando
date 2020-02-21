@@ -6,7 +6,7 @@ const Details = () => {
   return (
     <Centered>
       <Text>Checkout the github repo!</Text>
-      <Text>santospatrick/react-native-template-santospatrick</Text>
+      <Text>inovando/react-native-template-inovando</Text>
     </Centered>
   );
 };

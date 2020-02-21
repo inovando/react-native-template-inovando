@@ -1,11 +1,15 @@
 # react-native-template-inovando
 > 📱 Inovando's template for react-native-cli
 
+<p style="text-align: center;">
+  <img src="docs/template.png" width="260" />
+</p>
+
 ## Usage
 1. Initialize your RN project with this command:
 
 ```bash
-react-native init AwesomeProject --template https://github.com/inovando/react-native-template-inovando
+react-native init AwesomeProject --template inovando
 ```
 
 2. Delete `~/App.js`
