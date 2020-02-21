@@ -1,0 +1,10 @@
+{
+    "name": "react-native-template-inovando",
+    "version": "0.0.1",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/inovando/react-native-template-inovando.git"
+    },
+    "homepage": "https://github.com/inovando/react-native-template-inovando#readme"
+}
