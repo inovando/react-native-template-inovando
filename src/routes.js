@@ -9,7 +9,13 @@ const Stack = createStackNavigator();
 
 function Routes() {
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      theme={{
+        colors: {
+          background: 'transparent',
+        },
+      }}
+    >
       <Stack.Navigator>
         <Stack.Screen
           name="Main"
