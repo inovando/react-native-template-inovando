@@ -12,7 +12,7 @@ function Routes() {
     <NavigationContainer
       theme={{
         colors: {
-          background: 'transparent',
+          background: '#fff',
         },
       }}
     >
