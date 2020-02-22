@@ -26,6 +26,11 @@ implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
 implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
 ```
 
+For Reactotron debug in Android, run this command:
+```
+adb reverse tcp:9090 tcp:9090
+```
+
 ## Features
 - [x] [Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 - [x] [ESLint](https://github.com/santospatrick/eslint-config-react)/[Prettier](https://github.com/santospatrick/prettier-config)
@@ -33,3 +38,4 @@ implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
 - [x] [Dotenv](https://github.com/zetachang/react-native-dotenv)
 - [x] [Axios](https://www.npmjs.com/package/axios)
 - [x] [React Navigation](https://reactnavigation.org/en/)
+- [x] [Reactotron](https://github.com/infinitered/reactotron)
