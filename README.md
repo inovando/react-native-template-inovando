@@ -39,6 +39,14 @@ Inspect elements with [React Devtools](https://www.npmjs.com/package/react-devto
 
 [Read More](https://facebook.github.io/react-native/docs/debugging#react-developer-tools)
 
+
+## Deploy
+
+This command will also deploy to Yaarn.
+```
+npm publish --access public
+```
+
 ## Features
 - [x] [Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 - [x] [ESLint](https://github.com/santospatrick/eslint-config-react)/[Prettier](https://github.com/santospatrick/prettier-config)
