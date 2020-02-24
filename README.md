@@ -31,6 +31,14 @@ For Reactotron debug in Android, run this command:
 adb reverse tcp:9090 tcp:9090
 ```
 
+## Scripts
+
+### `yarn react-devtools`
+
+Inspect elements with [React Devtools](https://www.npmjs.com/package/react-devtools). Open the in-app developer menu and choose "Toggle Inspector" then click/press any element in your App, it will show up in React Devtools Window.
+
+[Read More](https://facebook.github.io/react-native/docs/debugging#react-developer-tools)
+
 ## Features
 - [x] [Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 - [x] [ESLint](https://github.com/santospatrick/eslint-config-react)/[Prettier](https://github.com/santospatrick/prettier-config)
@@ -39,3 +47,4 @@ adb reverse tcp:9090 tcp:9090
 - [x] [Axios](https://www.npmjs.com/package/axios)
 - [x] [React Navigation](https://reactnavigation.org/en/)
 - [x] [Reactotron](https://github.com/infinitered/reactotron)
+- [x] [React Devtools](https://www.npmjs.com/package/react-devtools)
