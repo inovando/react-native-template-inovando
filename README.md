@@ -1,9 +1,10 @@
 # react-native-template-inovando
 > 📱 Inovando's template for react-native-cli
 
-<p style="text-align: center;">
-  <img src="docs/template.png" width="260" />
-</p>
+[![NPM version](https://img.shields.io/npm/v/react-native-template-inovando.svg)](https://www.npmjs.com/package/react-native-template-inovando)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
+![Package Main Techs](docs/techs.png)
 
 ## Usage
 1. Initialize your RN project with this command:
@@ -42,7 +43,7 @@ Inspect elements with [React Devtools](https://www.npmjs.com/package/react-devto
 
 ## Deploy
 
-This command will also deploy to Yaarn.
+This command will also deploy to Yarn.
 ```
 npm publish --access public
 ```
