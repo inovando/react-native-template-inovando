@@ -32,6 +32,18 @@ For Reactotron debug in Android, run this command:
 adb reverse tcp:9090 tcp:9090
 ```
 
+### MacOS "Network Error"
+
+1. Go to "Open Network Preferences" > "Advanced..." > "DNS" Tab and add 8.8.8.8.
+
+![Mac DNS 8.8.8.8 network config to prevent error in AVD](docs/android-mac-network-solution.png)
+
+2. Restart your AVD.
+
+![Android restar AVD](docs/android-restart-avd.png)
+
+3. It should work fine! 🎉
+
 ## Scripts
 
 ### `yarn react-devtools`
