@@ -69,3 +69,5 @@ npm publish --access public
 - [x] [React Navigation](https://reactnavigation.org/en/)
 - [x] [Reactotron](https://github.com/infinitered/reactotron)
 - [x] [React Devtools](https://www.npmjs.com/package/react-devtools)
+- [x] [Formik](https://jaredpalmer.com/formik/)
+- [x] [Yup](https://github.com/jquense/yup)
