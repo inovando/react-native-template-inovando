@@ -24,8 +24,8 @@ export const AuthProvider = ({ children }) => {
     loadStoragedData();
   }, []);
 
-  async function signIn() {
-    const response = await auth.signIn();
+  async function signIn(values) {
+    const response = await auth.signIn(values);
 
     setUser(response.user);
 

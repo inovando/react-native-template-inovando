@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   return (
     <Centered>
-      <Text>Logged in as: {user?.name}</Text>
+      <Text>Logged in as: {user?.email}</Text>
       <Text>Checkout the github repo!</Text>
       <Text>inovando/react-native-template-inovando</Text>
       <Button onPress={signOut} title="Logout"></Button>
