@@ -11,6 +11,7 @@ export const Input = styled.TextInput`
   border-radius: 4px;
   color: #000;
   padding: 0 10px;
+  background-color: #fff;
 `;
 
 export const ErrorText = styled.Text`
