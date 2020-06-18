@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Input, ErrorText } from './styles';
 
 const TextField = (props) => {
-  const { field, form } = props;
+  const { field, form, innerRef } = props;
   const { onChange, onBlur, value, name } = field;
   const { touched, errors } = form;
 
@@ -10,6 +10,7 @@ const TextField = (props) => {
     <Container>
       <Input
         testID={name}
+        ref={innerRef}
         onChangeText={onChange(name)}
         onBlur={onBlur(name)}
         value={value}
