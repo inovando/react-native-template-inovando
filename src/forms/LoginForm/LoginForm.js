@@ -2,14 +2,16 @@ import React, { useRef } from 'react';
 import { Button } from 'react-native';
 import { Formik, Field } from 'formik';
 import TextField from 'components/TextField';
+import MaskedField from 'components/MaskedField';
 import schema from './schema';
 
 const LoginForm = ({ onSubmit }) => {
   const password = useRef(null);
+  const cpf = useRef(null);
 
   return (
     <Formik
-      initialValues={{ email: '', password: '' }}
+      initialValues={{ cpf: '', email: '', password: '' }}
       validationSchema={schema}
       onSubmit={onSubmit}
     >
@@ -21,10 +23,17 @@ const LoginForm = ({ onSubmit }) => {
             keyboardType="email-address"
             blurOnSubmit={false}
             onSubmitEditing={() => {
-              password.current.focus();
+              cpf.current.getElement().focus();
             }}
             returnKeyType="next"
             component={TextField}
+          />
+          <Field
+            name="cpf"
+            placeholder="CPF"
+            type="cpf"
+            innerRef={cpf}
+            component={MaskedField}
           />
           <Field
             name="password"
