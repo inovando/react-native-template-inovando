@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, Image } from 'react-native';
-import Centered from 'components/Centered';
 import { useAuth } from 'contexts/auth';
 import LoginForm from 'forms/LoginForm';
+import FormView from 'styles/FormView';
 
 const Login = () => {
   const { signIn } = useAuth();
@@ -20,19 +20,19 @@ const Login = () => {
   }
 
   return (
-    <Centered>
+    <FormView>
       <View style={{ alignItems: 'center' }}>
         <Image
           source={require('images/inovando.png')}
           style={{ width: 150, height: 100 }}
           resizeMode="contain"
         />
-        <Text style={{ marginBottom: 10 }}>
+        <Text style={{ marginBottom: 20 }}>
           {loading ? 'Carregando...' : 'A template by @inovando'}
         </Text>
       </View>
       <LoginForm onSubmit={handleSignIn} />
-    </Centered>
+    </FormView>
   );
 };
 

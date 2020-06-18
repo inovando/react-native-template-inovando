@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Button } from 'react-native';
-import Centered from 'components/Centered';
+import Centered from 'styles/Centered';
 import { useAuth } from 'contexts/auth';
 
 const Dashboard = () => {

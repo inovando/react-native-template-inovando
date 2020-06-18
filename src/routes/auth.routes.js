@@ -6,14 +6,16 @@ import { createStackNavigator } from '@react-navigation/stack';
 const AuthStack = createStackNavigator();
 
 const AuthRoutes = () => (
-  <AuthStack.Navigator>
-    <AuthStack.Screen
-      options={{
-        headerShown: false,
-      }}
-      name="Login"
-      component={Login}
-    />
+  <AuthStack.Navigator
+    screenOptions={{
+      cardStyle: {
+        backgroundColor: '#edf5ff',
+        opacity: 1,
+      },
+    }}
+    headerMode="none"
+  >
+    <AuthStack.Screen name="Login" component={Login} />
   </AuthStack.Navigator>
 );
 
