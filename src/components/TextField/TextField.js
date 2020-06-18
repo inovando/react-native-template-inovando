@@ -2,7 +2,15 @@ import React from 'react';
 import { Container, Input, ErrorText } from './styles';
 
 const TextField = (props) => {
-  const { field, form, innerRef } = props;
+  const {
+    field,
+    form,
+    innerRef,
+    onChange: handleChange = () => {},
+    editable = true,
+    ...rest
+  } = props;
+
   const { onChange, onBlur, value, name } = field;
   const { touched, errors } = form;
 
@@ -11,13 +19,17 @@ const TextField = (props) => {
       <Input
         testID={name}
         ref={innerRef}
-        onChangeText={onChange(name)}
+        onChangeText={(text) => {
+          handleChange(text);
+          onChange(name)(text);
+        }}
         onBlur={onBlur(name)}
         value={value}
         placeholderTextColor="#808080"
         autoCapitalize="none"
         autoCorrect={false}
-        {...props}
+        editable={editable}
+        {...rest}
       />
       {touched[field.name] && errors[field.name] && (
         <ErrorText>{errors[field.name]}</ErrorText>

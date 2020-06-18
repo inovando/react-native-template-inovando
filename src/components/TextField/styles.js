@@ -12,6 +12,7 @@ export const Input = styled.TextInput`
   color: #000;
   padding: 0 10px;
   background-color: #fff;
+  opacity: ${(props) => (props.editable ? 1 : 0.3)};
 `;
 
 export const ErrorText = styled.Text`
