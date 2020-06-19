@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components/native';
 
 export const Container = styled.TouchableOpacity`
   background-color: ${(props) =>
-    props.loading || props.disabled ? '#cccccc' : '#25abf2'};
+    props.loading || props.disabled ? '#cccccc' : props.theme.primary};
   border-radius: 4px;
   padding: 10px 20px;
   min-width: 100px;
@@ -13,7 +13,7 @@ export const Container = styled.TouchableOpacity`
     props.outline &&
     css`
       border-width: 1px;
-      border-color: #25abf2;
+      border-color: ${(props) => props.theme.primary};
       border-style: solid;
       background-color: #fff;
     `}
@@ -26,6 +26,6 @@ export const Container = styled.TouchableOpacity`
 `;
 
 export const Text = styled.Text`
-  color: ${(props) => (props.outline ? '#25abf2' : '#fff')};
+  color: ${(props) => (props.outline ? props.theme.primary : '#fff')};
   font-weight: bold;
 `;
