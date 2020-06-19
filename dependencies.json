@@ -12,5 +12,6 @@
     "formik": "^2.1.4",
     "yup": "^0.29.1",
     "js-brasil": "^2.1.0",
-    "react-native-masked-text": "^1.13.0"
+    "react-native-masked-text": "^1.13.0",
+    "react-native-modal": "^11.5.6"
 }
