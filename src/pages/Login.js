@@ -27,9 +27,7 @@ const Login = () => {
           style={{ width: 150, height: 100 }}
           resizeMode="contain"
         />
-        <Text style={{ marginBottom: 20 }}>
-          {loading ? 'Carregando...' : 'A template by @inovando'}
-        </Text>
+        <Text style={{ marginBottom: 20 }}>A template by @inovando</Text>
       </View>
       <LoginForm onSubmit={handleSignIn} />
     </FormView>

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import { Button } from 'react-native';
 import { Formik, Field } from 'formik';
 import TextField from 'components/TextField';
 import MaskedField from 'components/MaskedField';
+import Button from 'components/Button';
 import schema from './schema';
 
 const LoginForm = ({ onSubmit }) => {
@@ -32,6 +32,10 @@ const LoginForm = ({ onSubmit }) => {
             name="cpf"
             placeholder="CPF"
             type="cpf"
+            blurOnSubmit={false}
+            onSubmitEditing={() => {
+              password.current.focus();
+            }}
             innerRef={cpf}
             component={MaskedField}
           />
@@ -44,11 +48,9 @@ const LoginForm = ({ onSubmit }) => {
             returnKeyType="send"
             component={TextField}
           />
-          <Button
-            disabled={isSubmitting}
-            onPress={handleSubmit}
-            title="Submit"
-          />
+          <Button stretch loading={isSubmitting} onPress={handleSubmit}>
+            Send
+          </Button>
         </>
       )}
     </Formik>
