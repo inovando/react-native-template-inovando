@@ -35,12 +35,6 @@ react-native init AwesomeProject --template inovando
 
 ## Android
 
-Add these lines to `dependencies` at `android/app/build.gradle`:
-```
-implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
-implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
-```
-
 For Reactotron debug in Android, run this command:
 ```
 adb reverse tcp:9090 tcp:9090
