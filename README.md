@@ -6,6 +6,12 @@
 
 ![Package Main Techs](docs/techs.png)
 
+## Preview
+
+|   iOS   |  Android  |
+|---------|-----------|
+| ![Template iOS Preview](docs/preview-ios.gif) | ![Template Android Preview](docs/preview-android.gif) |
+
 ## Usage
 1. Initialize your RN project with this command:
 
@@ -16,6 +22,14 @@ react-native init AwesomeProject --template inovando
 2. Delete `~/App.js`
 
 3. Duplicate `.env.example` to `.env` and `.env.production` fulfilling variables as needed
+
+4. Add these lines at `.gitignore`
+
+```bash
+# Environment
+.env
+.env.production
+```
 
 4. Done 🎉
 
