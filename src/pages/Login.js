@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Image } from 'react-native';
 import { useAuth } from 'contexts/auth';
 import LoginForm from 'forms/LoginForm';
 import FormView from 'styles/FormView';
@@ -21,13 +21,12 @@ const Login = ({ navigation }) => {
 
   return (
     <FormView>
-      <View style={{ alignItems: 'center' }}>
+      <View style={{ alignItems: 'center', marginBottom: 40 }}>
         <Image
           source={require('images/inovando.png')}
-          style={{ width: 150, height: 100 }}
+          style={{ width: 150, height: 120 }}
           resizeMode="contain"
         />
-        <Text style={{ marginBottom: 20 }}>A template by @inovando</Text>
       </View>
       <LoginForm navigation={navigation} onSubmit={handleSignIn} />
     </FormView>
