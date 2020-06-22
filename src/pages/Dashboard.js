@@ -12,19 +12,19 @@ const Dashboard = () => {
   return (
     <Centered>
       <Modal
-        title="Confirm action?"
+        title="Deseja mesmo sair?"
         isVisible={showModal}
         onClose={() => setShowModal(false)}
         footerComponent={
           <Button onPress={signOut} stretch>
-            Logout
+            Sair
           </Button>
         }
       />
       <Text>Logged in as: {user?.email}</Text>
       <Text>Checkout the github repo!</Text>
       <Text>inovando/react-native-template-inovando</Text>
-      <Button onPress={() => setShowModal(true)}>Logout</Button>
+      <Button onPress={() => setShowModal(true)}>Sair</Button>
     </Centered>
   );
 };

@@ -4,7 +4,7 @@ import { useAuth } from 'contexts/auth';
 import LoginForm from 'forms/LoginForm';
 import FormView from 'styles/FormView';
 
-const Login = () => {
+const Login = ({ navigation }) => {
   const { signIn } = useAuth();
   const [loading, setLoading] = useState(false);
 
@@ -29,7 +29,7 @@ const Login = () => {
         />
         <Text style={{ marginBottom: 20 }}>A template by @inovando</Text>
       </View>
-      <LoginForm onSubmit={handleSignIn} />
+      <LoginForm navigation={navigation} onSubmit={handleSignIn} />
     </FormView>
   );
 };
